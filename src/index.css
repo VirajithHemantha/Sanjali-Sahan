@@ -8,19 +8,19 @@
   --font-montserrat: "Montserrat", sans-serif;
   --font-playball: "Playball", cursive;
 
-  --color-sage: #f3a7cd;
-  --color-paper: #FDFBF7;
+  --color-sage: #ef4444;
+  --color-paper: #ffffff;
 
-  --color-theme-50: #fdf7fb;
-  --color-theme-100: #f8eaf3;
-  --color-theme-200: #f1d6e8;
-  --color-theme-300: #e8bdd9;
-  --color-theme-400: #dd9ec8;
-  --color-theme-500: #f3a7cd;
-  --color-theme-600: #bc5f99;
-  --color-theme-700: #9f4c80;
-  --color-theme-800: #833f69;
-  --color-theme-900: #6c3557;
+  --color-theme-50: #fef2f2;
+  --color-theme-100: #fee2e2;
+  --color-theme-200: #fecaca;
+  --color-theme-300: #fca5a5;
+  --color-theme-400: #f87171;
+  --color-theme-500: #ef4444;
+  --color-theme-600: #dc2626;
+  --color-theme-700: #b91c1c;
+  --color-theme-800: #991b1b;
+  --color-theme-900: #7f1d1d;
 }
 
 :root {
@@ -77,7 +77,15 @@ html, body {
   width: clamp(300px, 38vw, 620px);
   aspect-ratio: 1 / 1;
   opacity: var(--mandala-accent-opacity);
-  filter: sepia(1) saturate(1.55) hue-rotate(285deg) brightness(1.12) contrast(1.05);
+  filter: sepia(1) saturate(3) hue-rotate(330deg) brightness(1.1) contrast(1.1);
+}
+
+.mandala-red {
+  filter: sepia(1) saturate(3) hue-rotate(330deg) brightness(1.1) contrast(1.1);
+}
+
+.mandala-white {
+  filter: grayscale(1) brightness(10);
 }
 
 .mandala-corner.is-soft {
