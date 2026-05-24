@@ -208,6 +208,7 @@ export default function WeddingInvitation() {
   // Handle Music Auto-play on Open
   useEffect(() => {
     if (isOpened && invitationAudioRef.current) {
+      invitationAudioRef.current.currentTime = 0;
       invitationAudioRef.current.play().catch(err => console.log("Autoplay blocked:", err));
       setIsPlaying(true);
     }
@@ -470,7 +471,7 @@ export default function WeddingInvitation() {
                 <div className="absolute inset-1.5 rounded-full border border-theme-400/50" />
                 <div className="absolute inset-3 rounded-full border border-theme-500/30" />
                 <div className="text-center relative z-10">
-                  <p className="font-cinzel text-[1.7rem] font-bold text-stone-800 leading-none">S&H</p>
+                  <p className="font-cinzel text-[1.7rem] font-bold text-stone-800 leading-none">S&S</p>
                   <div className="h-px w-12 bg-stone-400 mx-auto my-1.5" />
                   <p className="text-[8px] uppercase tracking-[0.35em] font-bold text-stone-600">Open</p>
                 </div>
@@ -533,7 +534,7 @@ export default function WeddingInvitation() {
                 transition={{ duration: 2, ease: "easeOut" }}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-cinzel text-[40vw] text-theme-900 pointer-events-none whitespace-nowrap leading-none select-none z-0"
               >
-                S&H
+                S&S
               </motion.div>
 
               {/* Central Premium Arch Card */}
